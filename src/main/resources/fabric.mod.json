@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "hud-info",
+	"version": "${version}",
+	"name": "hud-info",
+	"description": "Basic HUD mod, default keybinding for opening config is \"N\"",
+	"authors": [
+		"Chrstnc"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/hud-info/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"io.github.chrstncrrnd.Hudinfo"
+		]
+	},
+	"mixins": [
+		"hud-info.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
